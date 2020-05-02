@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import Header from '../../components/Header';
+import Content from './components/Content';
+import Footer from '../../components/Footer';
 
 import './style.css'
 
-
 export default function Profile() {
     return (
-        <div className="container">
-            <h1>Profile</h1>
-            <Link to="/" className='btn-default'>Home</Link>
-            <Link to="/profile" className='btn-default'>Profile</Link>
-            <Link to="/directory" className='btn-default'>Directory</Link>
+        <div>
+            <Header />
+            <Content />
+            <Footer />
         </div>
     )
 }

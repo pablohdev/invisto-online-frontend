@@ -1,0 +1,135 @@
+@media only screen and (max-width: 768px) { 
+    .profile__image-regular {
+        display: none;
+    }
+    .profile__image-small { 
+        display: flex;
+    }
+    .profile__image {
+        width: 100%;
+    }
+    .profile__content {
+        width: 100%;
+    }
+    .profile__container {
+        margin: 0px 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) { 
+    .profile__image-regular {
+        display: block;
+    }
+    .profile__image-small { 
+        display: none;
+    }
+    .profile__image {
+        width: 60%;
+    }
+    .profile__content {
+        width: 40%;
+    }
+    .profile__container {
+        margin: 0px 80px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #0F9B9F;
+}
+body {
+    
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+.profile__image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 0px 20px;
+}
+.profile__image-regular img {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+.profile__image-small {
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #10C0C6 0%, #4BDD92 100%);
+    padding: 5px;
+    border-radius: 100%;
+}
+.profile__image-small img {
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.profile__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+#professional_name {
+    padding: 5px 0px;
+}
+#professional_class {
+    padding: 5px 0px;
+    color: #616161;
+    font-weight: normal;
+}
+#professional_company {
+    padding: 5px 0px;
+    font-weight: normal;
+}
+.profile__content__description {
+    text-align: justify;
+    padding: 15px 0px;
+}
+.profile__content__details {
+    padding: 5px 0px;
+}
+.profile__content__details__background {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.profile__content__details__background span {
+    background: #10C0C6;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.profile__content__details__background span:hover {
+    background: #0F9B9F;
+}
+#professional_specialization {
+    padding: 5px 0px;
+    font-weight: normal;
+}
+#professional_contact {
+    margin-top: 15px;
+}
+.profile__content__links {
+    display: flex;
+    flex-direction: column;
+}
+.profile__content__links a {
+    padding: 7px 0px;
+}
