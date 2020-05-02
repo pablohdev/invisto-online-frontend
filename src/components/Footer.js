@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="pre-footer">
-                <a href="#"><img className="pre-footer__logo" alt="logo" src={logo2}></img></a>
+                <a href="/"><img className="pre-footer__logo" alt="logo" src={logo2}></img></a>
                 <span className="pre-footer__slogan">conectando os pontos por você</span>
                 <div className="pre-footer__social">
                     <a href="#"><FaFacebookF /></a>

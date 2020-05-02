@@ -95,6 +95,19 @@ a:hover {
     text-align: justify;
     padding: 15px 0px;
 }
+.profile__content__lead {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+}
+.profile__content__lead h4 {
+    margin-bottom: 10px;
+}
+.profile__content__lead input {
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid #D3D3D3;
+}
 .profile__content__details {
     padding: 5px 0px;
 }
@@ -121,7 +134,7 @@ a:hover {
     font-weight: normal;
     font-size: 14px;
 }
-#professional_contact {
+#professional_contact, #professional_lead {
     margin-top: 15px;
 }
 .profile__content__links {

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Paginas
-import Profile from './pages/Profile'
+import {PersonalPage, LeadPage} from './pages/Profile'
 import Directory from './pages/Directory'
 import App from './App'
 
@@ -12,7 +12,10 @@ export default () => {
         <Router>
             <Switch>
                 <Route path="/profile">
-                    <Profile />
+                    <PersonalPage />
+                </Route>
+                <Route path="/lead">
+                    <LeadPage />
                 </Route>
                 <Route path="/directory" >
                     <Directory />

@@ -7,6 +7,7 @@ export default function App() {
             <h1>Home</h1>
             <Link to="/" className='btn-default'>Home</Link>
             <Link to="/profile" className='btn-default'>Profile</Link>
+            <Link to="/lead" className='btn-default'>Lead</Link>
             <Link to="/directory" className='btn-default'>Directory</Link>
         </div>
     )
