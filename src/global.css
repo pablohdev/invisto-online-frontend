@@ -8,11 +8,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
 }
-
 
 .btn-default{
   background: #10C0C6;
@@ -32,7 +31,7 @@
 }
 
 .btn-default:hover{
-  background: #16BCC1;
+  background: #0F9B9F;
   transition: 0.3s
 }
 
