@@ -8,13 +8,13 @@ export default function Footer() {
     return (
         <footer>
             <div className="pre-footer">
-                <a href="/"><img className="pre-footer__logo" alt="logo" src={logo2}></img></a>
+                <Link to="/"><img className="pre-footer__logo" alt="logo" src={logo2}></img></Link>
                 <span className="pre-footer__slogan">conectando os pontos por você</span>
                 <div className="pre-footer__social">
-                    <a href="#"><FaFacebookF /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><FaYoutube /></a>
-                    <a href="#"><FaInstagram /></a>
+                    <Link to="#"><FaFacebookF /></Link>
+                    <Link to="#"><FaTwitter /></Link>
+                    <Link to="#"><FaYoutube /></Link>
+                    <Link to="#"><FaInstagram /></Link>
                 </div>
             </div>
             <div className="footer">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
-import {Personal, Lead} from './components/Content';
+import {Personal, Lead, Comments} from './components/Content';
 import Footer from '../../components/Footer';
 
 import './style.css'
@@ -19,6 +19,15 @@ export function LeadPage() {
         <div>
             <Header />
             <Lead />
+            <Footer />
+        </div>
+    )
+}
+export function CommentsPage() {
+    return (
+        <div>
+            <Header />
+            <Comments />
             <Footer />
         </div>
     )

@@ -11,14 +11,14 @@ export default function Header() {
         <header>
             <div className="header">
                 <div className="header__menu">
-                    <a className="header__logo" href="/"><img alt="logo" src={logo}></img></a>
+                    <Link to='/' className="header__logo"><img alt="logo" src={logo}></img></Link>
                     <div className="header__search">
                         <input type="text" placeholder="Pesquisar no Invisto Online"></input>
                         <FaSearch />
                     </div>
                 </div>
                 <div className="header__control_panel">
-                    <a className="header__professional_area" href="#">Área do Profissional</a>
+                    <Link to='#' className="header__professional_area">Área do Profissional</Link>
                 </div>
                 <div className="header__expandable">
                     <FaUser />

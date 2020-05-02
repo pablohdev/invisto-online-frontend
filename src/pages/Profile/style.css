@@ -108,6 +108,36 @@ a:hover {
     margin: 5px 0px;
     border: 1px solid #D3D3D3;
 }
+.profile__content__comments {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 10px 0px;;
+}
+.profile__content__comments a {
+    font-size: 14px;
+    color: #10C0C6;
+}
+.profile__content__comments a:hover {
+    color: #0F9B9F;
+}
+.comment { 
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.comment_content {
+    font-weight: normal;
+    font-size: 14px;
+    color: #616161;
+    text-align: justify;
+    margin-top: 5px;
+}
+.comment_author {
+    padding: 5px 0px;
+    font-weight: normal;
+    font-size: 14px;
+}
 .profile__content__details {
     padding: 5px 0px;
 }
