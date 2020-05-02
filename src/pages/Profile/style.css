@@ -41,9 +41,6 @@ a {
 a:hover {
     color: #0F9B9F;
 }
-body {
-    
-}
 .profile {
     display: flex;
     flex-wrap: wrap;
