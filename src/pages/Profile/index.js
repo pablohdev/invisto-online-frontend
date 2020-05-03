@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
-import {Personal, Lead, Comments} from './components/Content';
+import { Personal, Lead, Comments } from './components/Content';
 import Footer from '../../components/Footer';
 
 import './style.css'
