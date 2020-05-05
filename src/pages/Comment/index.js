@@ -13,7 +13,7 @@ import api from '../../services/api';
 
 import './style.css'
 
-export function PersonalPage({ match }) {
+export function Comment({ match }) {
 
     const [users, setUsers] = useState([]);
 
@@ -57,20 +57,24 @@ export function PersonalPage({ match }) {
                                 <h4 id="professional_class">{users.kind_professional}</h4>
                                 <h4 id="professional_company">Monkey Investments</h4>
                             </div>
-                            <div className="profile__content__description">
-                                <p>{users.description}</p>
-                            </div>
-                            <div className="profile__content__details">
-                                <h4>Background</h4>
-                                <div id="professional_background" className="profile__content__details__background">
-                                    {users.background}
+
+                            <div className="profile__content__comments">
+                                <h4>Comentários de Clientes</h4>
+                                <div className="comment">
+                                    <p className="comment_content">Sou assessorado pelo Michael há 3 anos e posso dizer que aprendi bastante durante esta jornada. Seu trabalho é completamente centrado no cliente e na sua evolução como investidor. Fui salvo de realizar grandes besteiras financeiras ao longo do nosso relacionamento e o agradeço muito por isso. Recomendo a todos que precisarem de um profissional sério.</p>
+                                    <h4 className="comment_author">Jorge Mendonça</h4>
                                 </div>
-                                <h4>Especialização</h4>
-                                <h4 id="professional_specialization"> {users.specialization}</h4>
-                                <Link to={`/lead/${users.id}`} id="professional_contact" className="btn-default">Entre em Contato</Link>
+                                <div className="comment">
+                                    <p className="comment_content">Confiei a custódia da minha conta da corretora ao Michael e não me arrependo nem um pouco. Michael cuida do meu dinheiro como se fosse o seu próprio, me explicando todos os detalhes e fornecendo relatórios detalhados da performance. </p>
+                                    <h4 className="comment_author">Douglas Mateo</h4>
+                                </div>
+                                <Link to='#'>Mais Comentários</Link>
+                                <Link to='#'>Inserir Novo Comentário</Link>
                             </div>
+
                             <div className="profile__content__links">
-                                <Link to={`/comments/${users.id}`}><FaComment /> Comentários dos Clientes</Link>
+                                <Link to={`/profile/${users.id}`}><BsFillBriefcaseFill /> Seja Cliente</Link>
+                                <Link to={`/lead/${users.id}`}><FaComment /> Entrar em contato</Link>
                                 <Link to="/"><FaHome /> Página do Escritório</Link>
                             </div>
                         </div>

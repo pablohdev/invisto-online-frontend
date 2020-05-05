@@ -71,18 +71,20 @@ export default function Profile() {
                         </table>
 
                         {users.map(user => (
-                            <div className="profile">
-                                <div className="imgPerfil">
-                                    <img src={user.profile_picture} alt="Foto do perfil" />
+                            <Link to={`/profile/${user.id}`}>
+                                <div className="profile" key={user.id}>
+                                    <div className="imgPerfil">
+                                        <img src={user.profile_picture} alt="Foto do perfil" />
+                                    </div>
+                                    <div className="descricao">
+                                        <h1>{user.name}</h1>
+                                        <h2>{user.kind_professional}</h2>
+                                        <p>{user.specialization}</p>
+                                        <p><FiMessageSquare color="rgb(44, 44, 44)" /> {Math.ceil(Math.random() * 50)} Avaliações de Clientes</p>
+                                        <a>PRO</a>
+                                    </div>
                                 </div>
-                                <div className="descricao">
-                                    <h1>{user.name}</h1>
-                                    <h2>Consultor de Investimentos</h2>
-                                    <p>Especialista em Profissionais Autônomos</p>
-                                    <p><FiMessageSquare color="rgb(44, 44, 44)" /> {Math.ceil(Math.random() * 50)} Avaliações de Clientes</p>
-                                    <a>PRO</a>
-                                </div>
-                            </div>
+                            </Link>
                         ))}
 
 

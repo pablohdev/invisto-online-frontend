@@ -13,7 +13,7 @@ import api from '../../services/api';
 
 import './style.css'
 
-export function PersonalPage({ match }) {
+export function Lead({ match }) {
 
     const [users, setUsers] = useState([]);
 
@@ -57,19 +57,22 @@ export function PersonalPage({ match }) {
                                 <h4 id="professional_class">{users.kind_professional}</h4>
                                 <h4 id="professional_company">Monkey Investments</h4>
                             </div>
+
                             <div className="profile__content__description">
-                                <p>{users.description}</p>
+                                <p>Há 15 anos no mercado financeiro, Michael Moskotivz já trabalhou em grandes bancos e agora quer ajudar o investidor pessoa física a fazer seu dinheiro trabalhar.</p>
+                            </div>
+                            <div className="profile__content__lead">
+                                <h4>Preencha Abaixo e Baixe o Material</h4>
+                                <input type="text" placeholder="Nome"></input>
+                                <input type="text" placeholder="Endereço de Email"></input>
+                                <input type="text" placeholder="Telefone de Contato"></input>
                             </div>
                             <div className="profile__content__details">
-                                <h4>Background</h4>
-                                <div id="professional_background" className="profile__content__details__background">
-                                    {users.background}
-                                </div>
-                                <h4>Especialização</h4>
-                                <h4 id="professional_specialization"> {users.specialization}</h4>
-                                <Link to={`/lead/${users.id}`} id="professional_contact" className="btn-default">Entre em Contato</Link>
+                                <button id="professional_lead" className="btn-default">Guia de Como Começar a Investir</button>
                             </div>
+
                             <div className="profile__content__links">
+                                <Link to={`/profile/${users.id}`}><BsFillBriefcaseFill /> Seja Cliente</Link>
                                 <Link to={`/comments/${users.id}`}><FaComment /> Comentários dos Clientes</Link>
                                 <Link to="/"><FaHome /> Página do Escritório</Link>
                             </div>

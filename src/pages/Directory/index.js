@@ -35,7 +35,7 @@ export default function Directory() {
                         <logo><span>invisto</span>.online</logo>
                         <p>Encontre um profissional de investimentos que combina com você</p>
                         <Link to="/list" className='btn-default'>Buscar Profissional de Investimento</Link>
-                        <p>É um acessor ou consultor?</p>
+                        <p>É um assessor ou consultor?</p>
                         <button className='btn-default'>Cadastre-se na Plataforma</button>
                     </div>
                     <div className="perfil">
@@ -55,8 +55,8 @@ export default function Directory() {
                     <h1>Profissionais em Destaque</h1>
 
                     {users.map((user) => (
-                        <Link to={'profile/' + user.id}>
-                            <img src={user.profile_picture} key={user.id} />
+                        <Link to={'profile/' + user.id} key={user.id}>
+                            <img src={user.profile_picture} />
                         </Link>
                     ))}
 
