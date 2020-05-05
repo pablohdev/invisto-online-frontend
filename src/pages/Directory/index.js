@@ -1,16 +1,31 @@
-import React from 'react';
-//import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
-import profile from '../../static/profile-big.jpg';
-import profileSmall from '../../static/profile-small.png';
+import api from '../../services/api';
+
+
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
 
 import './style.css'
 
 
 export default function Directory() {
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        searchUser()
+    }, [])
+
+
+    async function searchUser() {
+
+        const user = await api.get('/user')
+
+        setUsers(user.data)
+    };
+
     return (
         <div className="container-fluid">
             <Header />
@@ -19,7 +34,7 @@ export default function Directory() {
                     <div className="acao">
                         <logo><span>invisto</span>.online</logo>
                         <p>Encontre um profissional de investimentos que combina com você</p>
-                        <button className='btn-default'>Buscar Profissional de Investimento</button>
+                        <Link to="/list" className='btn-default'>Buscar Profissional de Investimento</Link>
                         <p>É um acessor ou consultor?</p>
                         <button className='btn-default'>Cadastre-se na Plataforma</button>
                     </div>
@@ -38,7 +53,13 @@ export default function Directory() {
 
                 <div className="destaque">
                     <h1>Profissionais em Destaque</h1>
-                    <img src={profileSmall} alt="Foto do Perfil" />
+
+                    {users.map((user) => (
+                        <Link to={'profile/' + user.id}>
+                            <img src={user.profile_picture} key={user.id} />
+                        </Link>
+                    ))}
+
 
                     <h2>Profissionais por Cidade</h2>
                     <p>

@@ -1,0 +1,171 @@
+.busca{
+    position: relative;
+    background-color: rgba(196, 196, 196, 0.3);
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .busca p{
+    margin-bottom: 1rem;
+  }
+  
+  .busca a{
+    font-size: 1rem;
+    color: #10C0C6;
+  }
+  
+  .busca b{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: normal;
+    color: rgb(44, 44, 44);
+  }
+  
+  .busca input{
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 10px;
+  }
+  
+  .icoSearch {
+    position: relative;
+    float:right;
+    z-index:10;
+    margin-top: -30px;
+  }
+  
+  .resultado h1{
+    color: #10C0C6;
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+  
+  .resultado p{
+    font-size: 1rem;
+    color: rgb(44, 44, 44);
+  }
+  
+  .resultado table{
+    color: rgb(44, 44, 44);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .resultado th, td{
+    padding: 10px;
+  }
+  .resultado th{
+    text-align: left;
+    width: 20rem;
+    font-size: 1rem;
+  }
+  
+  .resultado td{
+    width: 20rem;
+    font-size: 1rem;
+  }
+  
+  .profile{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+  
+  .imgPerfil{
+    margin-right: 2rem;
+  }
+  
+  .imgPerfil img{
+    width: 100%;
+  }
+  
+  .descricao{
+    margin-top: 2vh;
+  }
+  
+  .descricao h1{
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: .6rem;
+  }
+  
+  .descricao h2{
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin-top: .6rem;
+  }
+  
+  .descricao p{
+    color: rgb(44, 44, 44);
+    font-size: 1rem;
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+  }
+  
+  .descricao a{
+    background-color: #10C0C6;
+    color: white;
+    padding: 5px;   
+    border-radius: 5px;
+    box-shadow: darkgray;
+  }
+  
+  .paginacao{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .paginacao a{
+    background-color: #10C0C6;
+    color: white;
+    padding: 5px;   
+    border-radius: 5px;
+    box-shadow: darkgray;
+    margin: 1rem;
+  }
+  
+  .paginacao p{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    padding: 5px;   
+    border-radius: 5px;
+    box-shadow: darkgray;
+    margin: 1rem;
+  }
+  
+  .cadastro{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cadastro p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 620px){
+    html {
+      font-size: 90%;
+    }
+    .responsivo{
+      display: none;
+    }
+    .profile{
+      width: 90%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

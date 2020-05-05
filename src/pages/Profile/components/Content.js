@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import profile from '../../../static/profile-big.jpg';
 import profileSmall from '../../../static/profile-small.png';
-import { FaBriefcase, FaComment, FaHome, FaUser } from "react-icons/fa";
+import { FaComment, FaHome, FaUser } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 
@@ -17,14 +17,17 @@ function ProfileImage() {
             </div>
             <div className="profile__image-small">
                 <img src={profileSmall}></img>
-            </div> 
+            </div>
         </div>
     );
 }
-function ProfileBasicInfo() {
+function ProfileBasicInfo(params) {
+
+    console.log(params.user)
+
     return (
         <div className="profile__content__professional">
-            <h1 id="professional_name">Michael Moskovitz <GoVerified size={22} color='#2C96EA'/></h1>
+            <h1 id="professional_name">Nome <GoVerified size={22} color='#2C96EA' /></h1>
             <h4 id="professional_class">Agente Autônomo de Investimentos</h4>
             <h4 id="professional_company">Monkey Investments</h4>
         </div>
@@ -112,12 +115,12 @@ function CommentsDetails() {
     );
 }
 
-export function Personal() {
+export function Personal(params) {
     return (
         <main>
             <div className="profile">
                 <ProfileImage />
-                <PersonalDetails />
+                <PersonalDetails user={params} />
             </div>
         </main>
     )
